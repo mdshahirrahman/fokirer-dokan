@@ -165,3 +165,101 @@ span{
 .iconarea a:hover .fa-youtube{
     color: #ff0000;
 }
+
+.productsection{
+    width: 85%;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: -60px;
+    position: relative;
+    background-size: 1000px;
+    border-radius: 10px;
+
+}
+
+.productsection > h3{
+    margin: 20px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.05);
+    font-family: myraid pro;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2rem;
+    color: #323543;
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.productbox{
+    width: 250px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    margin: 10px 30px;
+}
+
+.productbox img{
+    height: 180px;
+}
+
+.productbox p{
+    text-align: center;
+    color: #4d4d4d70;
+    font-family: myraid pro;
+    font-size: 0.9rem;
+    letter-spacing: 0.5;
+}
+
+.productbox a{
+    text-align: center;
+    color: #2c2c2c;
+    font-family: poppins;
+    font-size: 1rem;
+}
+
+.buybtn{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: calibri;
+    left: 25%;
+    bottom: -20px;
+    transform: rotateX(-50%);
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+    background: linear-gradient(120deg,#6b60ec 20%,#a166f4);
+    color: #FFFFFF;
+    display: none;
+    animation: fade 0.2s;
+}
+
+.productbox:hover .buybtn{
+    display: flex;
+}
+
+.productbox:hover{
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+
+.productbox:hover a:last-child{
+    color: #fff;
+    transform: all ease 0.3s;
+}
